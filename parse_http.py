@@ -1,3 +1,6 @@
+# References:
+# http://bt3gl.github.io/black-hat-python-infinite-possibilities-with-the-scapy-module.html
+
 from scapy.all import *
 from scapy.layers import http
 
@@ -24,8 +27,10 @@ for session in sessions:
 		except:
 			pass
 
-	http_requests.append(http_request)
-	http_responses.append(http_responses)
+	if http_request:
+		http_requests.append(http_request)
+	if http_response:
+		http_responses.append(http_responses)
 
 for htreq in http_requests:
 	print("*" * 80)
