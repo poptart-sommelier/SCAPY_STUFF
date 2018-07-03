@@ -1,5 +1,6 @@
 # References:
 # http://bt3gl.github.io/black-hat-python-infinite-possibilities-with-the-scapy-module.html
+# https://theitgeekchronicles.files.wordpress.com/2012/05/scapyguide1.pdf
 
 from scapy.all import *
 from scapy.layers import http
